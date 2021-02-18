@@ -1,0 +1,8 @@
+if (browser.equals("chrome")) {
+		System.setProperty("webdriver.chrome.driver", "//C:\\Users\\ROHINI\\Downloads\\chromedriver.exe");
+		driver=new ChromeDriver();
+	}else if (browser.equals("firefox")) {
+		driver=new FirefoxDriver();
+	}else if (browser.equals("ie")) {
+		driver=new InternetExplorerDriver();
+	}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="test123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="priyesh@gmail.com"/>
+    <classes>
+      <class name="com.testng.AttributeAnnotation">
+        <methods>
+          <include name="test5"/>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- com.testng.AttributeAnnotation -->
+      <class name="com.testng.TestNGBasics">
+        <methods>
+          <include name="closeBroswer"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuit"/>
+          <include name="afterClass"/>
+          <include name="setUp"/>
+          <include name="aftertest"/>
+          <include name="testCase6"/>
+          <include name="testCase5"/>
+          <include name="testCase4"/>
+          <include name="afterSuit"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.testng.TestNGBasics -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
