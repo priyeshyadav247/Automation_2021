@@ -3,11 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.ParameterTest">
+      <class name="com.testng.TestNGBasics">
         <methods>
-          <include name="LaunchUrlTest"/>
+          <include name="closeBroswer"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuit"/>
+          <include name="afterClass"/>
+          <include name="setUp"/>
+          <include name="googleLogoTest"/>
+          <include name="aftertest"/>
+          <include name="afterSuit"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.testng.ParameterTest -->
+      </class> <!-- com.testng.TestNGBasics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

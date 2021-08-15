@@ -23,26 +23,27 @@ public class WaitDyanamic {
 		///not use implicity wait and explicitly wait together bozeselenium WD wait first implicitly and the explecitly
 		//hence total sync wait will be increases
 		//use anywhere in code 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+ driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		driver.get("https://touch.facebook.com/reg/?cid=103&refsrc=https%3A%2F%2Ftouch.facebook.com%2F&soft=hjk");
 		driver.manage().window().maximize();
 		WebElement fname=driver.findElement(By.name("firstname"));
 		WebElement Lname=driver.findElement(By.name("lastname"));
-		sendKeys(driver,fname,10,"priyesh");
+		sendKeys(driver,fname,10,"priyesh"); // calling sendkeys method from line 47
 		sendKeys(driver, Lname, 10, "yadav");
 		WebElement next=driver.findElement(By.linkText("Already have an account?"));
 		clickOn(driver, next, 5);
 		Thread.sleep(5000);
 		driver.close();
 
-		
 		//2:Explicitly wait: use mostly for ecommerce sites insted of implicitlywait
 		//no explicitly keyword used
 		//dynamic in nature
 		//available with webdriverwait
 		//specific to element
 	}
+	//sending values by sendkeys- and it declairs in main method at line 32 
+	
 		public static void sendKeys(WebDriver driver,WebElement element,int timeout,String value)
 		{
 			new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));

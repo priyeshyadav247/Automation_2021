@@ -53,7 +53,7 @@ public class TestNGBasics  {
 	}
 		@Test (priority=3)
 		public void googleLogoTest()  {
-		Boolean b=driver.findElement(By.xpath("//img[@alt='Google']")).isDisplayed();
+		Boolean b=driver.findElement(By.xpath("//div[@id='hpctaplay']")).isDisplayed();
 		System.out.println(b);
 		}// if here we not gte{} and take part of another test case the its o/pis NullPointer Exception 
 		
